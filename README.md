@@ -1,4 +1,3 @@
-
 1. Group Member: Qiang Zeng(UFID:29884423) 
 
 2. Working:
@@ -7,25 +6,25 @@
 
 3. largest network 10000 nodes 5 requests.
 
-Execution : 
-example :
+>Execution : 
+>example :
 	>scalac Project3.scala
 	>scala Project3 3000 30
-OUTPUT :
-                    ...
-Race Detected:	List(132132, 132120, 132011)
-Race Detected:	List(023330, 023332, 023210, 022222, 032102, 132011)
-Race Detected:	List(012230, 012313, 032102, 332020)
-Race Detected:	List(101221, 101302, 102031, 123233, 332020)
-Average hop per Message  =3.853191134810865
-example :
+>OUTPUT :
+>...                    
+>Race Detected:	List(132132, 132120, 132011)
+>Race Detected:	List(023330, 023332, 023210, 022222, 032102, 132011)
+>Race Detected:	List(012230, 012313, 032102, 332020)
+>Race Detected:	List(101221, 101302, 102031, 123233, 332020)
+>Average hop per Message  =3.853191134810865
+>example :
 
 	>scalac Project3.scala
 	>scala Project3 10000 5
-OUTPUT :
-Race Detected:	List(1031321, 1031301, 1031001, 1032223, 1301101)
-Race Detected:	List(2013211, 2013230, 2013011, 2012320, 2121001, 1301101)
-Race Detected:	List(3110232, 3110220, 3110013, 3113222)
-Race Detected:	List(1212001, 1212000, 1211010, 1232333, 1032223, 3113222)
-Average hop per Message  =4.53475
+>OUTPUT :
+>Race Detected:	List(1031321, 1031301, 1031001, 1032223, 1301101)
+>Race Detected:	List(2013211, 2013230, 2013011, 2012320, 2121001, 1301101)
+>Race Detected:	List(3110232, 3110220, 3110013, 3113222)
+>Race Detected:	List(1212001, 1212000, 1211010, 1232333, 1032223, 3113222)
+>Average hop per Message  =4.53475
       
