@@ -1,4 +1,4 @@
-1. Group Member: Qiang Zeng(UFID:29884423) 
+1. Group Member
 
 2. Working:
           First, We generate the nodeId randomly. The base of the nodeId is determined by b and the length of the nodeId is determined by both numofnodes and b. Then we initiate the pastry Network by initiate every node's leafset and routing table.  Then send each node a message that ask each node to send a number of requests. Each node route a message which keep track of hops and hopLists. Forward function is the most important function that help to find the next hop. The Forward function first check the key whether it is within the range of current node's leafset, then select the node which is most close to key. If the key is not within range of leafset, we use the routing table. Find the corresponding row and col , if the entry is not "ffffffff" then forward to that node. The rare case is to check all the leafset and routing table. 
